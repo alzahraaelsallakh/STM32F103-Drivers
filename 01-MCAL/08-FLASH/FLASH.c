@@ -54,7 +54,7 @@ typedef struct
 } FLASH_t;
 
 
-FLASH_t * FLASH = (FLASH_t *) FLASH_BASE_ADDRESS;
+volatile FLASH_t * const  FLASH = (FLASH_t *) FLASH_BASE_ADDRESS;
 
 
 /*
